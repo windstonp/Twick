@@ -60,7 +60,7 @@ class User extends Authenticatable
     public function timeline(){
         $followers = $this->follows()->pluck('id');
 
-        return Twick::whereIn('user_id',$followers)
+        return twick::whereIn('user_id',$followers)
             ->orWhere('user_id',$this->id)
             ->WithLikes()
             ->latest()
