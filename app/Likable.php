@@ -24,9 +24,9 @@ trait Likable
         return $this->like($user,false);
     }
     public function isLikedBy(User $user){
-        return (bool)$user->likes->where('twick_id',$this->id)->where('liked',true)->count();
+        return (bool)$user->likes->where('twick_id',$this->id)->where('liked',true)->count('liked');
     }
     public function isDislikedBy(User $user){
-        return (bool)$user->likes->where('twick_id',$this->id)->where('liked',false)->count();
+        return (bool)$user->likes->where('twick_id',$this->id)->where('liked',false)->count('liked');
     }
 }
