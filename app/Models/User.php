@@ -68,7 +68,7 @@ class User extends Authenticatable
     }
 
     public function twicks(){
-        return $this->hasMany(Twick::class)->latest();
+        return $this->hasMany(twick::class)->latest();
     }
 
     public function path($append = ''){
