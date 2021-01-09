@@ -10,3 +10,10 @@ test('test profile page loads correctly', function () {
     $response->assertStatus(200);
 });
 
+test('test edit profile page loads correctly', function () {
+    $user = userFactory()->create();
+    $response = actingAs($user)->get(route('profileEdit',$user->username));
+
+    $response->assertStatus(200);
+});
+
