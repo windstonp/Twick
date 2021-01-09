@@ -17,3 +17,9 @@ test('test edit profile page loads correctly', function () {
     $response->assertStatus(200);
 });
 
+test('test if can destroy a profile', function() {
+    $user = userFactory()->create();
+    $response = actingAs($user)->delete(route('profileDestroy', $user->username));
+
+    $response->assertStatus(302);
+});
