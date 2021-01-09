@@ -24,12 +24,12 @@ test('try to register without send data', function() {
 test('register success!', function(){
     
     $response = post('register', [
-        'username' => faker()->username,
+        'username' => faker()->firstName,
         'name' => faker()->name,
         'email' => faker()->email,
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
-        'password-confirm' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'
+        'password' => '12345678',
+        'password_confirmation' => '12345678'
     ]);
 
-    $response->assertSessionHasErrors();
+    $response->assertSessionHasNoErrors();
 });

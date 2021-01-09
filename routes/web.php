@@ -21,7 +21,7 @@ Auth::routes();
 
 Route::get('/twicks', [App\Http\Controllers\TwickController::class, 'index'])->name('home');
 Route::post('/twicks', [App\Http\Controllers\TwickController::class, 'store']);
-Route::delete('/twicks/delete/{twick:id}', [App\Http\Controllers\TwickController::class, 'destroy']);
+Route::delete('/twicks/delete/{twick:id}', [App\Http\Controllers\TwickController::class, 'destroy'])->name('destroyTwick');
 Route::post('/twicks/{id}/like',[App\Http\Controllers\TwickLikesController::class,'store']);
 Route::delete('/twicks/{id}/like',[App\Http\Controllers\TwickLikesController::class,'destroy']);
 

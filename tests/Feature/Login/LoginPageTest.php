@@ -1,7 +1,5 @@
 <?php
 
-
-
 it("login page loads correctly", function () {
 
     $response = get("/login");
