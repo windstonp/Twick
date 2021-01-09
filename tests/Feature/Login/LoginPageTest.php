@@ -18,12 +18,12 @@ it("tries to acess dashboard without login", function () {
 });
 
 it("fails to login", function () {
-    $response = test()->post('login', [
+    $response = post('login', [
         "email:" => "someRandomEmail@gmail.com",
         "password" => "testPassword",
     ]);
 
-    $response->assertStatus(302);
+    $response->assertSessionHasErrors('email','password');
 
 });
 
