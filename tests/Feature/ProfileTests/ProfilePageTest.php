@@ -62,3 +62,17 @@ test('test if an user can follow another user', function(){
 
     $response->assertStatus(302);
 });
+
+
+
+test('test followable trait at method follow and unfollow', function(){
+    $user = userFactory()->create();
+    $userToBeFollow = userFactory()->create();
+
+    $user->follow($userToBeFollow);
+    $user->unfollow($userToBeFollow);
+
+    expect($user->follows())->toBeObject();
+
+});
+
