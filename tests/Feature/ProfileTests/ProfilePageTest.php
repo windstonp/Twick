@@ -76,3 +76,14 @@ test('test followable trait at method follow and unfollow', function(){
 
 });
 
+test('test followable trait at method following return the true if user is following the other user!', function(){
+    $user = userFactory()->create();
+    $userToBeFollow = userFactory()->create();
+    $userThatIsNotFollow = userFactory()->create();
+
+    $user->follow($userToBeFollow);
+    
+    test()->assertTrue($user->following($userToBeFollow));
+    test()->assertFalse($user->following($userThatIsNotFollow));
+
+});
