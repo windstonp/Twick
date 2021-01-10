@@ -87,3 +87,22 @@ test('test followable trait at method following return the true if user is follo
     test()->assertFalse($user->following($userThatIsNotFollow));
 
 });
+
+test('test if an twick isLikedBy an user', function(){
+    $user = userFactory()->create();
+    $twick = twickFactory()->create();
+
+    $twick->like($user);
+
+    test()->assertTrue($twick->isLikedBy($user));
+
+});
+
+test('test if an twick isDislikedBy an user', function(){
+    $user = userFactory()->create();
+    $twick = twickFactory()->create();
+
+    $twick->dislike($user);
+    
+    test()->assertTrue($twick->isDislikedBy($user));
+});
