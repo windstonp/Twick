@@ -45,3 +45,10 @@ test('test if can get user avatar and banner', function(){
     $user = userFactory()->create();
     expect($user->getbannerAttribute('a'))->toBeString();
 });
+
+
+test('test user likes method', function(){
+    $user = userFactory()->create();
+    expect($user->likes())->toBeObject();
+});
+
