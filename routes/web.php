@@ -25,7 +25,7 @@ Route::delete('/twicks/delete/{twick:id}', [App\Http\Controllers\TwickController
 Route::post('/twicks/{id}/like',[App\Http\Controllers\TwickLikesController::class,'store'])->name('likeTwickStore');
 Route::delete('/twicks/{id}/like',[App\Http\Controllers\TwickLikesController::class,'destroy'])->name('likeTwickDestroy');
 
-Route::post('profile/{user:username}/follows',[App\Http\Controllers\FollowsController::class,'store']);
+Route::post('profile/{user:username}/follows',[App\Http\Controllers\FollowsController::class,'store'])->name('followUser');
 Route::get('profile/{user:username}',[App\Http\Controllers\ProfileController::class,'show'])->name('profile');
 Route::get('profile/{user:username}/edit',[App\Http\Controllers\ProfileController::class,'edit'])->name('profileEdit');
 Route::Put('profile/{user:username}/update',[App\Http\Controllers\ProfileController::class,'update'])->name('profileUpdate');

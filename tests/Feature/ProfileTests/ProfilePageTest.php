@@ -40,3 +40,8 @@ test('test update profile method', function () {
 
     $response->assertSessionHasErrors('avatar','banner');
 });
+
+test('test if can get user avatar and banner', function(){
+    $user = userFactory()->create();
+    expect($user->getbannerAttribute('a'))->toBeString();
+});
