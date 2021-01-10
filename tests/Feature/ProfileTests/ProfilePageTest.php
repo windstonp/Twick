@@ -52,3 +52,13 @@ test('test user likes method', function(){
     expect($user->likes())->toBeObject();
 });
 
+test('test if an user can follow another user', function(){
+    $user = userFactory()->create();
+    $userToBeFollow = userFactory()->create();
+
+    $response = actingAs($user)->post(route('followUser', $userToBeFollow->username));
+
+    expect($user->follows)->toBeObject();
+
+    $response->assertStatus(302);
+});
