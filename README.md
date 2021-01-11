@@ -7,7 +7,7 @@
 # Sumary
 1. [About the project](#about).
 2. [Road map of what has been done](#Road-map).
-3. [Extra funcitons added](#extra).
+3. [Extra functions added](#extra).
 4. [Install the project](#install).
 5. [How to start the project](#Start).
 6. [License](#license).
@@ -15,7 +15,7 @@
 # 📁 About the project.<a name="about"></a>
 Twick is was my first project developed using laravel. I started it when I was watching the laracast course of laravel where we create an clone of Twitter using laravel as our final project. So that's my project I hope you like it. if you find an error doesn't hesitate on create an Issue. If you do that I will be really glad to resolve the problem.
 
-# 📜 List of function developed <a name="Road-map"></a>
+# 📜 List of what whas developed <a name="Road-map"></a>
 
 ### Things that were created in the course.
 
@@ -33,7 +33,7 @@ Twick is was my first project developed using laravel. I started it when I was w
     - [x] permission if the user can edit the profile ✔️. 
 - [x] Created list to show all of your follows ✔️. 
 
-# 📑 Extra functions Added. <a name="extra"></a>
+# 📑 Extra features added. <a name="extra"></a>
 
 - [x] Create Tests using <a href="https://pestphp.com/" target="_blank">Pest</a> ✔️. 
     - [x] created tests of the home page ✔️. 
@@ -42,7 +42,7 @@ Twick is was my first project developed using laravel. I started it when I was w
     - [x] created tests of the twick controller and it's trait ✔️. 
     - [x] created tests of followable trait ✔️. 
     - [x] created tests for the login and register method ✔️.
-- [ ] Add websocket to make the twick interation realtime ❌. 
+- [ ] Add websocket to make the twick interation with user realtime ❌. 
 - [ ] Create an better UI for the home page ❌.
 
 
@@ -59,8 +59,6 @@ composer install
 
 
 # 📂 How to start the project. <a name="Start"></a>
-
-## 🖥️ Back-End <a name="backend"></a>
 
 To start the project you will need to execute these commands
 
