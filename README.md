@@ -35,7 +35,7 @@ Twick is was my first project developed using laravel. I started it when I was w
 
 # 📑 Extra functions Added. <a name="extra"></a>
 
-- [x] Create Tests using [Pest](https://pestphp.com/) ✔️. 
+- [x] Create Tests using <a href="https://pestphp.com/" target="_blank">Pest</a> ✔️. 
     - [x] created tests of the home page ✔️. 
     - [x] created tests of the profile page ✔️. 
     - [x] created tests of the dashboard page ✔️.
@@ -48,7 +48,7 @@ Twick is was my first project developed using laravel. I started it when I was w
 
 # 📂 Install the Project. <a name="install"></a>
 
-First of all, you will need to install [Composer](https://www.npmjs.com/) and [Laravel](https://laravel.com/docs/8.x/installation#installation-via-composer) on your computer to download the packages.
+First of all, you will need to install <a href="https://getcomposer.org/download/" target="_blank">Composer</a> and <a href="https://laravel.com/docs/8.x/installation#installation-via-composer" target="_blank">Laravel</a> on your computer to download the packages.
 <br>
 ```
 // after install composer and laravel you will execute this command on the project folder:
