@@ -1,61 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 align="center">
+    Twick
+</h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+![Twick logo](https://imgur.com/3qdaZLT.jpg)
 
-## About Laravel
+# Sumary
+1. [About the project](#about).
+2. [Road map of what have been done during the week](#Road-map).
+3. [Extra funcitons added](#extra).
+4. [Install the project](#install).
+5. [How to start the project](#Start).
+6. [License](#license).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 📁 About the project.<a name="about"></a>
+Twick is was my first project developed using laravel. I started it when I was watching the laracast course of laravel where we create an clone of Twitter using laravel as our final project. So that's my project I hope you like it. if you find an error doesn't hesitate on create an Issue. If you do that I will be really glad to resolve the problem.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# 📜 List of function developed <a name="Road-map"></a>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Things that were created in the course.
 
-## Learning Laravel
+- [x] Home page ✔️. 
+- [x] Profile page ✔️. 
+  - [x] added timeline of the user ✔️. 
+  - [x] created the possibility of follow the user ✔️. 
+  - [x] created the possibility of unfollow the user ✔️. 
+  - [x] created edit user page ✔️. 
+  - [x] created delete account method ✔️.
+- [x] Created the page that list all the user's ✔️. 
+- [x] created the possibility of like or dislike an user twick ✔️. 
+- [x] Created permission ✔️.
+    - [x] permision if the user can delete an twick ✔️. 
+    - [x] permission if the user can edit the profile ✔️. 
+- [x] Created list to show all of your follows ✔️. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# 📑 Extra functions Added. <a name="extra"></a>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [x] Create Tests using [Pest](https://pestphp.com/) ✔️. 
+    - [x] created tests of the home page ✔️. 
+    - [x] created tests of the profile page ✔️. 
+    - [x] created tests of the dashboard page ✔️.
+    - [x] created tests of the twick controller and it's trait ✔️. 
+    - [x] created tests of followable trait ✔️. 
+    - [x] created tests for the login and register method ✔️.
+- [ ] Add websocket to make the twick interation realtime ❌. 
+- [ ] Create an better UI for the home page ❌.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# 📂 Install the Project. <a name="install"></a>
 
-### Premium Partners
+First of all, you will need to install [Composer](https://www.npmjs.com/) and [Laravel](https://laravel.com/docs/8.x/installation#installation-via-composer) on your computer to download the packages.
+<br>
+```
+// after install composer and laravel you will execute this command on the project folder:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+composer install
 
-## Contributing
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+# 📂 How to start the project. <a name="Start"></a>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🖥️ Back-End <a name="backend"></a>
 
-## Security Vulnerabilities
+To start the project you will need to execute these commands
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+//On the project folder run
+php artisan serve
 
-## License
+//Then access:
+localhost:8000
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+
+# 🎫 License <a name="license"></a>
+
+This is an open-source Project, you can use it and test it as many times as you want to. If you like the project Mark it with a star and contribute to it for more people see the project.
