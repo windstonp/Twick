@@ -6,7 +6,7 @@
 
 # Sumary
 1. [About the project](#about).
-2. [Road map of what have been done during the week](#Road-map).
+2. [Road map of what has been done](#Road-map).
 3. [Extra funcitons added](#extra).
 4. [Install the project](#install).
 5. [How to start the project](#Start).
